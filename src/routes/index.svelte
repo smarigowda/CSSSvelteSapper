@@ -1,16 +1,26 @@
+<script>
+  import Navigation from "../components/Navigation.svelte";
+  import Hero from "../components/Hero.svelte";
+</script>
+
 <svelte:head>
-  <title>title: Sapper project template</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Cards Flexbox</title>
+  <title>Flexbox - Freelancer Website</title>
   <link
     rel="stylesheet"
-    href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
   <link
-    href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700"
+    href="https://fonts.googleapis.com/css?family=Krub:400,700"
     rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
 </svelte:head>
 
-<div class="container" />
-<!--.content-->
+<Navigation />
+<Hero />
