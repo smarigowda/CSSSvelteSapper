@@ -1,46 +1,56 @@
+<script context="module">
+  export function preload({ params, query }) {
+    // index.json ==> index.json.js
+    return this.fetch(`index.json`)
+      .then(r => r.json())
+      .then(articles => {
+        console.log(articles);
+        return { articles };
+      });
+  }
+</script>
+
+<script>
+  export let articles;
+  import Button from "../components/Button.svelte";
+  import Articles from "../containers/Articles.svelte";
+</script>
+
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>title: Sapper project template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Cards Flexbox</title>
+  <link
+    rel="stylesheet"
+    href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700"
+    rel="stylesheet" />
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="container">
+  <h2>Latest Entries</h2>
+  <main class="main-content">
+    <Articles {articles} />
+  </main>
+</div>
+<!--.content-->
