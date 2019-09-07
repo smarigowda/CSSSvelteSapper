@@ -3,6 +3,7 @@
   import Hero from "../components/Hero.svelte";
   import Services from "../containers/Services.svelte";
   import Contact from "../components/Contact.svelte";
+  import services from "./_services.js";
 </script>
 
 <style>
@@ -40,6 +41,6 @@
 <Navigation />
 <Hero />
 <div class="container">
-  <Services />
+  <Services {services} />
   <Contact />
 </div>

@@ -1,4 +1,7 @@
 <style>
+  h2 {
+    text-align: center;
+  }
   @media (min-width: 768px) {
     form {
       max-width: 800px;

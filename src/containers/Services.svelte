@@ -1,5 +1,6 @@
 <script>
   import Service from "../components/Service.svelte";
+  export let services;
 </script>
 
 <style>
@@ -17,6 +18,8 @@
 <main class="services">
   <h2>My Services</h2>
   <div class="services-container">
-    <Service />
+    {#each services as service}
+      <Service {service} />
+    {/each}
   </div>
 </main>

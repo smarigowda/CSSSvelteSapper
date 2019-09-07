@@ -1,3 +1,7 @@
+<script>
+  export let service;
+</script>
+
 <style>
   .service {
     display: flex;
@@ -33,37 +37,11 @@
 </style>
 
 <div class="service">
-  <h3>Web Design</h3>
+  <h3>{service.heading}</h3>
   <div class="icons">
-    <i class="fas fa-pen-nib" />
+    {#each service.icons as icon}
+      <i class={icon.classes} />
+    {/each}
   </div>
-  <p>
-    Blanditiis omnis dolorum nihil, dolor dolore corporis, ducimus vero officia
-    beatae reiciendis velit quos quis deserunt placeat laboriosam necessitatibus
-    saepe iure eaque?
-  </p>
-</div>
-<div class="service">
-  <h3>App Development</h3>
-  <div class="icons">
-    <i class="fab fa-android" />
-    <i class="fab fa-apple" />
-  </div>
-  <p>
-    Blanditiis omnis dolorum nihil, dolor dolore corporis, ducimus vero officia
-    beatae reiciendis velit quos quis deserunt placeat laboriosam necessitatibus
-    saepe iure eaque?
-  </p>
-</div>
-<div class="service">
-  <h3>Social Media</h3>
-  <div class="icons">
-    <i class="fab fa-twitter" />
-    <i class="fab fa-facebook" />
-  </div>
-  <p>
-    Blanditiis omnis dolorum nihil, dolor dolore corporis, ducimus vero officia
-    beatae reiciendis velit quos quis deserunt placeat laboriosam necessitatibus
-    saepe iure eaque?
-  </p>
+  <p>{service.description}</p>
 </div>
