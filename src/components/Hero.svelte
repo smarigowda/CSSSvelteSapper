@@ -28,24 +28,6 @@
     font-size: 3rem;
     color: var(--primary);
   }
-  .button {
-    background-color: var(--secondary);
-    padding: 0.5rem 3rem;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 0.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    border: none;
-    color: var(--white);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  .button:hover {
-    background-color: rgb(1, 123, 136);
-  }
 </style>
 
 <div class="hero">

@@ -1,7 +1,22 @@
 <script>
   import Navigation from "../components/Navigation.svelte";
   import Hero from "../components/Hero.svelte";
+  import Services from "../containers/Services.svelte";
+  import Contact from "../components/Contact.svelte";
 </script>
+
+<style>
+  .container {
+    margin: 2rem auto 3rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.45);
+    border-radius: 1rem;
+  }
+</style>
 
 <svelte:head>
   <meta charset="UTF-8" />
@@ -24,3 +39,7 @@
 
 <Navigation />
 <Hero />
+<div class="container">
+  <Services />
+  <Contact />
+</div>
