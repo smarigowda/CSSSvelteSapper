@@ -3,7 +3,7 @@
   export let article;
 </script>
 
-<style>
+<style lang="scss">
   img {
     max-width: 100%;
     display: block;

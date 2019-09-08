@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   :root {
     --button-color: #008fd1;
   }
