@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   .main-navigation {
     max-width: 1200px;
     margin: 0 auto;
@@ -7,22 +7,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .main-navigation a {
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 1.4rem;
-    margin-bottom: 1.4rem;
+    & a {
+      color: var(--dark);
+      text-decoration: none;
+      font-size: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
   }
   @media (min-width: 768px) {
     .main-navigation {
       flex-direction: row;
       justify-content: space-between;
-    }
-  }
-  @media (min-width: 768px) {
-    .main-navigation a {
-      margin-bottom: 0;
+      & a {
+        margin-bottom: 0;
+      }
     }
   }
 </style>
