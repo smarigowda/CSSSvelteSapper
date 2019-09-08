@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   h2 {
     text-align: center;
   }
@@ -28,24 +28,21 @@
   .w-100 {
     flex: 0 0 100%;
   }
-  .field textarea {
-    height: 4rem;
-  }
   .field {
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
-  }
-  .field label {
-    flex: 0 0 90px;
-    color: var(--white);
-  }
-  .field input[type="text"],
-  .field input[type="tel"],
-  .field input[type="mail"],
-  .field textarea {
-    flex: 1;
-    height: 2.4rem;
+    label {
+      flex: 0 0 90px;
+      color: var(--white);
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="mail"],
+    textarea {
+      flex: 1;
+      height: 2.4rem;
+    }
   }
 </style>
 
