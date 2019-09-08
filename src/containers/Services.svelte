@@ -3,7 +3,7 @@
   export let services;
 </script>
 
-<style>
+<style lang="scss">
   h2 {
     text-align: center;
   }

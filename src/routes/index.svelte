@@ -6,7 +6,7 @@
   import services from "./_services.js";
 </script>
 
-<style>
+<style lang="scss">
   .container {
     margin: 2rem auto 3rem auto;
     max-width: 1200px;

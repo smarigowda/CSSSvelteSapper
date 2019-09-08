@@ -2,11 +2,16 @@
   export let service;
 </script>
 
-<style>
+<style lang="scss">
   .service {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media (min-width: 768px) {
+    .service {
+      flex: 0 0 calc(33.3% - 1rem);
+    }
   }
   h3 {
     text-align: center;
@@ -25,13 +30,8 @@
     border-radius: 50%;
     align-items: center;
     justify-content: space-evenly;
-  }
-  .icons i {
-    font-size: 2rem;
-  }
-  @media (min-width: 768px) {
-    .service {
-      flex: 0 0 calc(33.3% - 1rem);
+    & i {
+      font-size: 2rem;
     }
   }
 </style>
