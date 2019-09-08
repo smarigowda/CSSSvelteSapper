@@ -1,32 +1,30 @@
-<style>
+<style lang="scss">
   .hero {
+    position: relative;
     height: 450px;
     background-image: url(../img/hero.jpg);
-    position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .hero::after {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.7);
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
+    &::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.7);
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0%;
+      position: absolute;
+    }
   }
   .hero-content {
     color: var(--white);
-    position: relative;
     z-index: 1;
     text-align: center;
-  }
-  .hero-content i {
-    font-size: 3rem;
-    color: var(--primary);
+    & i {
+      font-size: 3rem;
+      color: var(--primary);
+    }
   }
 </style>
 
